@@ -4,6 +4,7 @@ import "./globals.css";
 import { LenisProvider } from "@/components/LenisProvider";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { MouseGlow } from "@/components/MouseGlow";
+import { site } from "@/lib/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,14 +16,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const pageTitle = `${site.name} — ${site.title}`;
+
 export const metadata: Metadata = {
-  title: "Alex Rivera — Full Stack Developer",
-  description:
-    "Full stack developer building scalable web apps — performance, clarity, and production-ready delivery.",
+  title: {
+    default: pageTitle,
+    template: `%s | ${site.name}`,
+  },
+  description: site.tagline,
   openGraph: {
-    title: "Alex Rivera — Full Stack Developer",
-    description:
-      "Full stack developer building scalable web apps with modern tools.",
+    title: pageTitle,
+    description: site.tagline,
     type: "website",
   },
 };
