@@ -93,10 +93,11 @@ export const skillGroups: SkillGroup[] = [
   {
     title: "Cloud & Tools",
     items: [
-      { name: "AWS (EC2)", icon: "cloud" },
+      { name: "AWS (EC2, Lambda, S3)", icon: "cloud" },
       { name: "Docker (Basics)", icon: "box" },
       { name: "Git & GitHub", icon: "github" },
       { name: "Vercel", icon: "rocket" },
+      { name: "Cursor", icon: "cursor" },
     ],
   },
 ];

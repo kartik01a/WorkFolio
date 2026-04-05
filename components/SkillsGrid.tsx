@@ -14,6 +14,7 @@ import {
   Server,
   Share2,
   Sparkles,
+  WandSparkles,
 } from "lucide-react";
 import { skillGroups } from "@/lib/data";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -31,6 +32,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   rocket: Rocket,
   box: Box,
   activity: Activity,
+  cursor: WandSparkles,
 };
 
 const grid = {
